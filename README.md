@@ -1,4 +1,4 @@
-# flashcardlearn
+# Flash Cards Learn
 Flash Cards Learn
 
 # Start the application
