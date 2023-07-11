@@ -1,7 +1,6 @@
 > Desenvolvido por: Ademilson & Eduardo
 
 # Flash Cards Learn
-Flash Cards Learn
 
 ## Helpers
 Start the application: uvicorn app.main:app
