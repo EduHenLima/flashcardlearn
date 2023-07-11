@@ -6,4 +6,5 @@
 Start the application: uvicorn app.main:app
 
 ## Documentations
+- FastAPI: https://fastapi.tiangolo.com/
 - Design Pattern Structure: https://levelup.gitconnected.com/structuring-fastapi-project-using-3-tier-design-pattern-4d2e88a55757
