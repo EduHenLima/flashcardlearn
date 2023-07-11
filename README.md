@@ -3,8 +3,8 @@
 # Flash Cards Learn
 
 ## Helpers
-Start the application: uvicorn app.main:app
-Debug application: uvicorn app.main:app --reload
+- Start the application: uvicorn app.main:app
+- Debug application: uvicorn app.main:app --reload
 
 ## Documentations
 - FastAPI: https://fastapi.tiangolo.com/
