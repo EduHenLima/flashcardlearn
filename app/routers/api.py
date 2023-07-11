@@ -1,7 +1,10 @@
 from fastapi import APIRouter
 
-from app.routers import users, posts
+from app.routers import assuntos, cards, categorias, pergunta, resposta
 
 router = APIRouter()
-router.include_router(users.router, prefix="/users", tags=["Users"])
-router.include_router(posts.router, prefix="/posts", tags=["Posts"])
+router.include_router(assuntos.router, prefix="/assuntos", tags=["Assuntos"])
+router.include_router(cards.router, prefix="/cards", tags=["Cards"])
+router.include_router(categorias.router, prefix="/categorias", tags=["Categorias"])
+router.include_router(pergunta.router, prefix="/pergunta", tags=["Pergunta"])
+router.include_router(resposta.router, prefix="/resposta", tags=["Resposta"])
