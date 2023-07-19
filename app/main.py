@@ -6,7 +6,7 @@ from app.routers.api import router as api_router
 app = FastAPI()
 
 
-@app.get("/vars")
+@app.get("/info")
 async def info():
     return {
         "APP Name": env_config.APP_NAME,
