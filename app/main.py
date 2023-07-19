@@ -1,6 +1,6 @@
 from fastapi import FastAPI
 
-from app.backend.config import settings
+from app.backend.config import env_config
 from app.routers.api import router as api_router
 
 app = FastAPI()
@@ -9,7 +9,7 @@ app = FastAPI()
 @app.get("/vars")
 async def info():
     return {
-        "APP Name": settings.APP_NAME,
+        "APP Name": env_config.APP_NAME,
     }
 
 

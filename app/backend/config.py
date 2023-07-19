@@ -1,13 +1,12 @@
-# config.py
-from pydantic import BaseSettings
+import os
+
+from dotenv import load_dotenv
 
 
-class Settings(BaseSettings):
-    APP_NAME = "Default"  # default value if env variable does not exist
+class Settings:
+    load_dotenv()
 
-# specify .env file location as Config attribute
-    class Config:
-        env_file = "../.env"
+    APP_NAME = os.environ.get("APP_NAME")
 
-# global instance
-settings = Settings()
+
+env_config = Settings
